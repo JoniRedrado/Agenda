@@ -1,0 +1,170 @@
+:root {
+  --colorPrincipal: #182026;
+  --blanco: #FFF;
+  --auxiliar: #F27B13;
+  --fondo:#FD7400;
+  --navegacion: #011826;
+  --borde: #436073;
+  --boton: #E7E8EC;
+  --NotoSans: 'Noto Sans', sans-serif;
+  --Roboto: 'Roboto', sans-serif;
+  --Ubuntu: 'Ubuntu', sans-serif;
+  --Josefin: 'Josefin Sans', sans-serif;  
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 100%;
+} 
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(110deg, rgba(253,116,0,1) 0%,rgba(255,103,15,0.9) 31%,rgba(255,103,15,0.85) 59%,rgba(255,103,15,0.82) 100%);
+  color: #FFF;
+}
+
+header{
+  margin: 3rem auto;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+header p {
+  letter-spacing: 1.6px;
+}
+header > * {
+  margin: 1rem;
+}
+
+.ingreso{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem 0 0.4rem;
+  box-shadow: 2px 2px 8px #A60303;
+  background-color: var(--boton);
+  border-radius: 20px;
+  width: 35%;
+  height: auto;
+}
+
+.ingreso form{
+  height: auto;
+}
+
+.ingreso form input, form label, form button, form select{
+  margin: 0 auto;
+  display: block;
+}
+
+.ingreso form label {
+  text-align: center;
+  font-size: 20px;
+  color: var(--borde);
+  letter-spacing: 1.5px;
+}
+
+.ingreso form input {
+  color: var(--colorPrincipal);
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 5px 2px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--colorPrincipal);
+  margin: 1.3rem auto;
+  width: 18rem;
+}
+
+.ingreso form input:focus{
+  outline: 0px;
+  border-bottom: var(--borde) 1.5px solid;
+}
+
+.ingreso form input:focus::placeholder {
+  color: transparent;
+}
+
+#color {
+  margin: .5rem auto;
+  border: none;
+  padding: 0;
+  height: 35px;
+}
+
+#boton {
+  margin-top: 1rem;
+  border-radius: 5px;
+  background-color: #A60303;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  font-size: 16px;
+  opacity: 0.7;
+  transition: 0.4s;
+  width: 8rem;
+}
+
+#boton:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+
+/******* AGENDA ********/
+.agenda {
+  margin: 1rem auto;
+  width: 95%;
+  }
+
+  .agenda ul{
+      list-style: none;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      letter-spacing: 1px;
+  }
+
+  .agenda ul > li:nth-child(1) {
+      width: 15rem;
+  } 
+
+  .agenda ul > li:nth-child(5) {
+      width: 50rem;
+  } 
+
+  .agenda ul li {
+      border: 1px solid var(--blanco);
+      width: 100%;
+      padding: 2px 0;
+      background-color: var(--colorPrincipal);
+  }
+
+  #contactos ul li {
+      background-color: var(--borde);
+      font-family: var(--Ubuntu);
+  }
+
+  #agregarContacto{
+    margin-top: 1rem;
+    border-radius: 5px;
+    background-color: #A60303;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.4s;
+    width: 14rem;
+  }
